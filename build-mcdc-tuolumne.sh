@@ -20,7 +20,7 @@ MCDC_DIR="$WORKSPACE/MCDC"
 # Setups - GPU mode
 # =============================================================================
 
-NO_GPU="true"
+WITH_GPU="false"
 
 # Harmonize branch
 HARMONIZE_BRANCH="global_array_fields"
@@ -67,7 +67,7 @@ git checkout "$MCDC_BRANCH"
 pip install -e .[dev]
 
 # Complete the script if GPU mode is not needed
-if [ "$NO_GPU" = "true" ]; then
+if [ "$WITH_GPU" = "false" ]; then
     return 1 2>/dev/null || exit 1
 fi
 
