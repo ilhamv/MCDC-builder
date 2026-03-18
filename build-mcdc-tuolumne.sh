@@ -20,10 +20,10 @@ MCDC_DIR="$WORKSPACE/MCDC"
 # Setups - GPU mode
 # =================
 
-WITH_GPU="true"
+WITH_GPU="false"
 
 # Harmonize branch
-HARMONIZE_BRANCH="global_array_fields"
+HARMONIZE_BRANCH="main"
 
 # ROCm and Python versions
 ROCM_VERSION="6.0.0"
